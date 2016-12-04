@@ -1,6 +1,7 @@
-//im getting an error everytime it runs 
+//im getting an error everytime it runs:
 /*
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at countvowels.CountVowels.main(CountVowels.java:28)
 */
 package countvowels;
 
@@ -22,8 +23,6 @@ public class CountVowels {
     char[] charArray = userInput.toCharArray();
    
     for (int i = 0; i <= charArray.length; i++){
-        
-      System.out.print(charArray[i]);
         for (int j = 0; j <=vowels.length; j++) {
         if (charArray[i] == vowels[j]) {
             counter++;
